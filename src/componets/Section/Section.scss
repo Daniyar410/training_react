@@ -80,11 +80,7 @@
         flex-direction: column-reverse;
     }
 
-    // img{
-    //     @media (max-width: 500px) {
-    //       width: 100px;
-    //     }
-    // }
+
 
 }
 
@@ -100,6 +96,12 @@
 
 .section3 {
     margin-top: 136px;
+
+    .img2{
+        @media (max-width: 500px) {
+          width: 100%;
+        }
+    }
 }
 
 .comment {

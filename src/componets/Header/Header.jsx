@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.scss'
 
 const Header = () => {
@@ -23,11 +23,16 @@ const Header = () => {
                             <h1>Digital Agency</h1>
                         </div>
 
-                        <div className={`header_menu ${isActive ? 'active' : ''}`}>
+                        <div className={`menu ${isActive ? 'active' : ''}`}>
                             <a href="">Home</a>
                             <a href="">About</a>
                             <a href="">Testimonials</a>
                             <a href="">Contact</a>
+                        </div>
+
+                        <div onClick={tooggleBurger} className={`burger ${isActive ? 'active' : ''}`}>
+                            <div></div>
+                            <div></div>
                         </div>
                     </div>
                 </div>

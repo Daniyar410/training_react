@@ -3,25 +3,22 @@
 }
 
 .wrap7 {
-    display: flex;
-    gap: 178px;
-    justify-content: center;
 
-
-
-    // @media (max-width: 800px) {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     /* justify-content: center; */
-    // }
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
     margin-top: 139px;
 
 
     text-transform: capitalize;
 
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
